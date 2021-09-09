@@ -43,10 +43,11 @@ const teams = [
   }
 ];
 
-// Generare numeri random al posto degli 0 nelle proprietà:
-// Punti fatti e falli subiti.
+// attraverso l'array teams
 for (let i = 0; i < teams.length; i++) {
-
+  
+  // Generare numeri random al posto degli 0 nelle proprietà:
+  // Punti fatti e falli subiti.
   for (let key in teams[i]) {
     if (teams[i][key] == 0)
       teams[i][key] = randomNumber();
